@@ -1,0 +1,30 @@
+C:\Users\dan23\Desktop\Brown\bin\Debug\net6.0\Brown.exe
+C:\Users\dan23\Desktop\Brown\bin\Debug\net6.0\Brown.deps.json
+C:\Users\dan23\Desktop\Brown\bin\Debug\net6.0\Brown.runtimeconfig.json
+C:\Users\dan23\Desktop\Brown\bin\Debug\net6.0\Brown.dll
+C:\Users\dan23\Desktop\Brown\bin\Debug\net6.0\Brown.pdb
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\Brown.csproj.AssemblyReference.cache
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\Brown.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\Brown.AssemblyInfoInputs.cache
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\Brown.AssemblyInfo.cs
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\Brown.csproj.CoreCompileInputs.cache
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\Brown.dll
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\refint\Brown.dll
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\Brown.pdb
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\Brown.genruntimeconfig.cache
+C:\Users\dan23\Desktop\Brown\obj\Debug\net6.0\ref\Brown.dll
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\bin\Debug\net6.0\Brown.exe
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\bin\Debug\net6.0\Brown.deps.json
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\bin\Debug\net6.0\Brown.runtimeconfig.json
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\bin\Debug\net6.0\Brown.dll
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\bin\Debug\net6.0\Brown.pdb
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\Brown.csproj.AssemblyReference.cache
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\Brown.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\Brown.AssemblyInfoInputs.cache
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\Brown.AssemblyInfo.cs
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\Brown.csproj.CoreCompileInputs.cache
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\Brown.dll
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\refint\Brown.dll
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\Brown.pdb
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\Brown.genruntimeconfig.cache
+C:\Users\dan23\Desktop\ \Studies\WSB\Fizyka\Brown\obj\Debug\net6.0\ref\Brown.dll
