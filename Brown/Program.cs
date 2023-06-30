@@ -3,59 +3,60 @@ class RuchyBrowna
 {
     private static void Main(string[] args)
     {
-        StreamWriter plik = new StreamWriter("RuchyBrowna.xls"); // deklaracja i otworzenie pliku wyjściowego
+        StreamWriter plik = new StreamWriter("BrownianMotion.xls");
+
+           /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+        Random rand = new Random(); // initialization of the random number generator
+        double x = 0, y = 0; // initial particle position
+        double vx = 0, vy = 0; // initial particle velocity
+        double dt = 0.01; // time step
+        double D = 1; // diffusion coefficient
+        double n; // variable n
+        double pi = 3.14159f, p; // variable representing the value of π
+
 
         /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-        Random rand = new Random(); // inicjalizacja generatora liczb losowych
-        double x = 0, y = 0; // początkowe położenie cząsteczki
-        double vx = 0, vy = 0; // początkowa prędkość cząsteczki
-        double dt = 0.01; // krok czasowy
-        double D = 1; // współczynnik dyfuzji
-        double n; // def. zmiennej n 
-        double pi = 3.14159f, p; // def. zmiennej będącej liczbą π
+        Console.WriteLine("Enter the number of steps: ");
 
+        n = double.Parse(Console.ReadLine()); // converting the string variable to double
 
         /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-        Console.WriteLine("Podaj liczbę ruchów: ");
+        file.WriteLine(x + "\t" + y + "\t"); // write initial coordinates to the file
 
-        n = double.Parse(Console.ReadLine()); // przekształcanie zmiennej typu string na double 
-
-        /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-        plik.WriteLine(x + "\t" + y + "\t"); // zapis początkowych współrzędnych do pliku
-
-        Console.WriteLine("Pozycja początkowa \nx = " + x.ToString() + " " + "\ny = " + y.ToString() + " "); // pozycja początkowa cząsteczki
+        Console.WriteLine("Initial position \nx = " + x.ToString() + " " + "\ny = " + y.ToString() + " "); // initial particle position
 
         /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-        for (int i = 0; i < n; i++) // pętla symulująca ruchy Browna
+        for (int i = 0; i < n; i++) // loop simulating Brownian motion
         {
 
-            double fx = rand.NextDouble() * 2 * pi;  // składowa losowa siły w kierunku x
-            double fy = rand.NextDouble() * 2 * pi;  // -||- y
+            double fx = rand.NextDouble() * 2 * pi;  // random force component in the x direction
+            double fy = rand.NextDouble() * 2 * pi;  // random force component in the y direction
 
-            vx += fx * Math.Sqrt(2 * D * dt); // zmiana prędkości w kierunku x
-            vy += fy * Math.Sqrt(2 * D * dt); // -||- y
+            vx += fx * Math.Sqrt(2 * D * dt); // change in velocity in the x direction
+            vy += fy * Math.Sqrt(2 * D * dt); // change in velocity in the y direction
 
-            x = x + (double)Math.Cos(fx); // nowa współrzędna x
-            y = y + (double)Math.Sin(fy); // nowa współrzędna y
+            x = x + (double)Math.Cos(fx); // new x coordinate
+            y = y + (double)Math.Sin(fy); // new y coordinate
 
-            plik.WriteLine(x + "\t" + y + "\t");
-            Console.WriteLine($"Iteracja {i}: \nx = {x} \ny = {y}"); // wypisanie położenia cząsteczki
+            file.WriteLine(x + "\t" + y + "\t");
+            Console.WriteLine($"Iteration {i}: \nx = {x} \ny = {y}"); // print particle position
         }
 
         /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-        plik.Close(); // zamknięcie pliku
+        file.Close(); // close the file
 
-        p = Math.Sqrt(x * x + y * y); // długość przemieszczenia
+        p = Math.Sqrt(x * x + y * y); // displacement length
 
-        Console.WriteLine("\nWektor przesunięcia jest równy: " + Math.Round(p, 5)); // zaokrąglanie wyniku zmiennej p do liczby całkowitej
-        Console.WriteLine("\nOstateczna pozycja X: " + Math.Round(x, 5));
-        Console.WriteLine("Ostateczna pozycja Y: " + Math.Round(y, 5));
+        Console.WriteLine("\nThe displacement vector is: " + Math.Round(p, 5)); // round the value of p to an integer
+        Console.WriteLine("\nFinal position X: " + Math.Round(x, 5));
+        Console.WriteLine("Final position Y: " + Math.Round(y, 5));
 
-        Console.ReadKey(); // oczekiwanie na naciśnięcie klawisza przed zamknięciem programu
+        Console.ReadKey(); // wait for a key press before closing the program
     }
+
 }
